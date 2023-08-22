@@ -4,7 +4,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./src:/src
+      - ./src:/drumbot/src
     deploy:
       resources:
         reservations:

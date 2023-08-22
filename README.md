@@ -12,8 +12,8 @@ Any files you put in the `src` folder will be available to the Docker container 
 
 You will need to create a folder `src/MIDI` and place your MIDI files in there. I got mine from [this](https://archive.org/details/themagicofmidiv1) Internet Archive collection.
 
-To build the environment image, open a terminal in the project directory and execute `docker build .`
+To build an image and create a container from it, execute `docker compose up`.
 
-To create and / or run a container from the image, execute `docker compose up`.
+In the terminal output you will see the URL of the running Jupyter server which you can click to open the Jupyter Lab GUI in a browser.
 
-In the terminal output you will see the URL of the running Jupyter server. You can click it to open Jupyter Lab GUI in a browser, or alternatively copy it and use as the kernel of a [Polyglot Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) session directly from VSCode.
+Alternatively you can copy it and use as the kernel of a [Polyglot Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) session directly from VSCode, however I found exceptions were thrown when trying to load audio output from cells.
